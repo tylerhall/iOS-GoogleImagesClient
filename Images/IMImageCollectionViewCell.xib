@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Qpr-PA-JrK" customClass="IMImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCL-c3-8dq">
+                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="aCL-c3-8dq" firstAttribute="top" secondItem="Qpr-PA-JrK" secondAttribute="top" id="C2B-bS-Euf"/>
+                <constraint firstAttribute="bottom" secondItem="aCL-c3-8dq" secondAttribute="bottom" id="foK-iU-F1J"/>
+                <constraint firstAttribute="trailing" secondItem="aCL-c3-8dq" secondAttribute="trailing" id="osR-gN-Vq4"/>
+                <constraint firstItem="aCL-c3-8dq" firstAttribute="leading" secondItem="Qpr-PA-JrK" secondAttribute="leading" id="yfm-fh-SGI"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="aCL-c3-8dq" id="YOF-4H-8rU"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
